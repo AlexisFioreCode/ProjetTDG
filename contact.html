@@ -37,26 +37,57 @@
       </ul>
     </nav>
   </header>
-<!-- Div to show products -->
-  <section>
-      <!-- Div number 3 -->
-      <div class="product"><h2><a href="iphone12.html">Iphone 12<img src="img/iphone12.png" alt="Iphone12"></a></h2>
-        <!-- description -->
-        <p>L'iPhone 12 est le modèle principal de la 14e génération de smartphone d'Apple annoncé le 13 octobre 2020. 
-          Il est équipé d'un double capteur photo avec ultra grand-angle et d'un SoC Apple A14 Bionic compatible 5G (sub-6 GHz).</p>
-        <div class="clear"></div>
-        <h2>Information du produit</h2>
-        <ul class="information">
-          <li>Taille de l'écran	= 6.1 Pouces</li>
-          <li>Marque = Apple</li>
-          <li>Capacité de stockage de la mémoire = 64 Go</li>
-          <li>Couleur	= Noir ou Blanc</li>
-        </ul>
-        <div class="clear"></div>
-        <p class="price"><strong>550€</strong></p>
-      </div>
+
+  <section class="form">
+    <form action="traitement.php" method="POST">
+
+        <h2>Formulaire de contact</h2>
+ 
+        <div>
+            <label for="firstname">Prénom :</label>
+            <input type="text" name="firstname" id="firstname"/>
+        </div>
+
+        <div>
+            <label for="lastname">Nom :</label>
+            <input type="text" name="lastname" id="lastname" required/>
+        </div>
+
+        <div> 
+            <label for="age">Votre âge :</label>
+            <input type="text" name="age" id="age"/>
+        </div>
+        
+        <div>
+            <label for="phone">Téléphone :</label>
+            <input type="tel" name="phone" id="phone">
+        </div> 
+
+        <div>     
+            <label for="email">Votre email :</label>
+            <input type="email" name="email" id="email" required/>
+        </div>
+
+        <div>
+            <label for="context">Objet du message</label>
+            <select name="context" id="context" required>
+                <option value="info">Information</option>
+                <option value="claim">Réclamation</option>
+                <option value="partner">Partenariat</option>
+                <option value="other">Autre</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="message">Ecrire votre message :</label>
+            <textarea name="message" id="message" cols="50" rows="15" required></textarea>
+            <input type="submit" value="Envoyer"/>
+        </div>
+        
+    </form>
   </section>
-  <div class="clear"></div>
+
+
 <!-- Start footer -->
   <footer>
     <!-- Legal mention with society name and adress  -->
