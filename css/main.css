@@ -205,7 +205,9 @@ table
 td, th
 {
   border: 1px solid black;
-    
+}
+caption {
+  font-size: 1.5rem;
 }
 /* CSS formulaire */
 form {
@@ -240,7 +242,7 @@ textarea {
   .tablette {
     display: block;
   }
-  .product .linkimage {
+  .linkimage {
     width: 50%;
     height: 50%;
     margin-left: 15%;
@@ -255,6 +257,26 @@ textarea {
   }
 }
 /* Computer code */
+
+ @media screen and (min-width: 1024px) {
+   section {
+     display: flex;
+   }
+   .product {
+     flex-direction: column;
+   }
+   h2 {
+     display: block;
+   }
+   .tablette {
+     display:none
+    }
+    .linkimage {
+      width: 90%;
+      margin-left: 0;
+    }
+ }
+
 
 
 /* ==========================================================================
