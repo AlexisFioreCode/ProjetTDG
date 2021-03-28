@@ -176,6 +176,9 @@ footer ul {
 .tablette {
   display: none;
 }
+i {
+  margin-right: 1vw;
+}
 
 /* CSS présentation */
 
@@ -275,6 +278,16 @@ textarea {
       width: 90%;
       margin-left: 0;
     }
+     header {
+       flex-direction: row;
+       justify-content: center;
+     }
+     .presentation {
+       height: 100vh;
+     }
+     iframe {
+       height: 70%;
+     }
  }
 
 
